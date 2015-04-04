@@ -1,19 +1,61 @@
-body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
-}
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+@import url(http://fonts.googleapis.com/css?family=Convergence);
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
+html, #container {
+  font-family: 'Convergence', sans-serif;
 }
-
-#title{
-  position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+body {
+  background-image: url('/assets/free-summer-movies.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  margin: 0 auto;
+}
+#title, .subheader {
+  font-family: 'Comfortaa', cursive;
+}
+#title {
+  font-size: 55px;
+}
+.subheader {
+  font-size: 25px;
+}
+p {
+  font-size: 14px;
+  text-indent: 20px;
+  text-align: left;
+  margin: 15px;
+}
+p::first-letter {
+  font-size: 20px;
+}
+#container {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 30px;
+  min-height: 100%;
+  overflow-y: hidden;
+}
+ul {
+  padding-bottom: 20px;
+}
+ul li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#movieref {
+  border-style: dashed;
+}
+#movieref:hover {
+  background-color: yellow;
+}
+.movieposter {
+  width: 200px;
+  float: left;
+  margin: 0 20px 20px;
+}
+hr {
+  width: 80%;
 }
